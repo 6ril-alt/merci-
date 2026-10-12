@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Cartoon</title>
+    <style>
+        body {
+            background-color: #f7f3e9;
+            text-align: center;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+            margin-top: 100px;
+        }
+        h1 {
+            color: #d9534f;
+            font-size: 3rem;
+            text-shadow: 3px 3px 0px #000;
+        }
+        /* Style pour rendre le lien du GIF cliquable comme un bouton */
+        .cartoon-btn {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        .cartoon-btn:hover {
+            transform: scale(1.1) rotate(-3deg);
+        }
+        .cartoon-btn img {
+            border: 4px solid #000;
+            border-radius: 15px;
+            box-shadow: 5px 5px 0px #000;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>Bienvenue par ici !</h1>
+    <p>Clique sur le bouton pour découvrir la suite...</p>
+
+    <!-- Le bouton avec ton GIF qui redirige vers la page de remerciement -->
+    <a href="merci.html" class="cartoon-btn">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzBxb2FjeDZ1YzV3bWtid2o0bmR5M295d25yd2h6OWpnZ240NDk2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5FgcarU9IGVvCOgZgR/giphy.gif" alt="Bouton cartoon">
+    </a>
+
+</body>
+</html>
