@@ -8,39 +8,50 @@
         body {
             background-color: #f7f3e9;
             text-align: center;
-            font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
-            margin-top: 100px;
+            margin: 0;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
-        h1 {
-            color: #d9534f;
-            font-size: 3rem;
-            text-shadow: 3px 3px 0px #000;
-        }
-        /* Style pour rendre le lien du GIF cliquable comme un bouton */
+
+        /* Style pour le bouton GIF principal (plus gros et sans animation au survol) */
         .cartoon-btn {
             display: inline-block;
-            transition: transform 0.2s ease;
+            text-decoration: none;
+            margin-bottom: 20px;
         }
-        .cartoon-btn:hover {
-            transform: scale(1.1) rotate(-3deg);
-        }
+
         .cartoon-btn img {
             border: 4px solid #000;
             border-radius: 15px;
             box-shadow: 5px 5px 0px #000;
+            width: 100%;
+            max-width: 450px; /* Taille agrandie */
+            height: auto;
+            display: block;
+        }
+
+        /* GIF de l'homme qui pointe du doigt */
+        .pointing-man {
+            width: 100%;
             max-width: 300px;
+            height: auto;
         }
     </style>
 </head>
 <body>
 
-    <h1>Bienvenue par ici !</h1>
-    <p>Clique sur le bouton pour découvrir la suite...</p>
-
-    <!-- Le bouton avec ton GIF qui redirige vers la page de remerciement -->
+    <!-- Bouton principal vers merci.html -->
     <a href="merci.html" class="cartoon-btn">
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzBxb2FjeDZ1YzV3bWtid2o0bmR5M295d25yd2h6OWpnZ240NDk2YiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5FgcarU9IGVvCOgZgR/giphy.gif" alt="Bouton cartoon">
     </a>
+
+    <!-- GIF de l'homme qui pointe vers le haut -->
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzJ2ZHR2cXd0czVwcG11dmkyemM1a3hla2YxaXp1anJzdGk0OTN6YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dHBla3RehQgqb06MD7/giphy.gif" alt="Homme qui pointe du doigt vers le haut" class="pointing-man">
 
 </body>
 </html>
